@@ -17,7 +17,7 @@
     temp += 0.8*np.random.randn(len(days)) # noise
     df = pd.DataFrame({"day": days, "temp": temp}) # data frame
 
-3.) Next we have to scale it using MinMaxScaler. MinMaxScaer expects 2D array data. So we fed with df[["temp"]]
+3.) Next we have to scale it using MinMaxScaler. MinMaxScaer expects 2D array data. So we fed in with df[["temp"]]
     scaler = MinMaxScaler()
     temp_scaled = scaler.fit_transform(df[['temp']].values)
 
